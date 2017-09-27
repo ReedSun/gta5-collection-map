@@ -3,7 +3,27 @@
   margin: 0px;
 }
 
-.pan {
-  background-color: rgb(83, 139, 194);
-  cursor: default;
+body {
+  background-color: rgb(83, 139, 194);  
+}
+
+#control-size-wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.control-size {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  font-size: xx-large;
+  margin: 10px;
+  cursor: pointer;
 }
