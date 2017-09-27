@@ -1,0 +1,27 @@
+{
+  "name": "gta5_collection_map",
+  "version": "1.0.0",
+  "description": "The map for collection of GTA5",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp uglify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReedSun/gta5-collection-map.git"
+  },
+  "author": "ReedSun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReedSun/gta5-collection-map/issues"
+  },
+  "homepage": "https://github.com/ReedSun/gta5-collection-map#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^3.9.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

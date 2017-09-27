@@ -1,0 +1,16 @@
+const gulp = require('gulp')
+const cleanCSS = require('gulp-clean-css')
+const uglify = require('gulp-uglify')
+const htmlmin = require('gulp-htmlmin')
+
+gulp.task('uglify', () => {
+  gulp.src('src/static/*.css')
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('dist'))
+  gulp.src('src/*.html')
+      .pipe(htmlmin({collapseWhitespace: true}))
+      .pipe(gulp.dest('dist'))
+  gulp.src('src/static/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('dist'))
+})
